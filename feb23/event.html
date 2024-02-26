@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var one= document.createElement("div");
+        one.setAttribute("style","margin-top:70px;margin-left:0px; ");
+        document.body.appendChild(one);
+        a=document.createElement("img")
+        a.setAttribute("src","./img1.jpg");
+        a.setAttribute("style","width:640px;height:400px;")
+        one.appendChild(a)
+
+        var two= document.createElement("div");
+        two.setAttribute("style","margin-top:100px;margin-left:0px;width:430px;height:140px");
+        document.body.appendChild(two);
+
+
+        var three=document.createElement("img");
+        three.setAttribute("src",("./img1.jpg"));
+        three.style.width="100px"
+        three.style.height="140px"
+
+        two.appendChild(three);
+        three.addEventListener("click",imgclick);
+
+        var four=document.createElement("img");
+        four.setAttribute("src","./house1.jpg");
+
+        four.setAttribute("style","margin-left:10px;width:100px;height:140px")
+        four.addEventListener("click",imgclick1);
+        two.appendChild(four);
+
+        var five=document.createElement("img");
+        five.setAttribute("src","./house5.jpg");
+        five.setAttribute("style","margin-left:10px;width:100px;height:140px")
+        five.addEventListener("click",imgclick2);
+        two.appendChild(five)
+
+        var six=document.createElement("img");
+        six.setAttribute("src","./house8.jpg");
+        six.setAttribute("style","margin-left:10px;width:100px;height:140px")
+        six.addEventListener("click",imgclick3);
+        two.appendChild(six)
+
+        function imgclick(){
+            a.setAttribute("src","./img1.jpg")
+            a.setAttribute("style","width:640px;height:400px;")
+  
+        }
+
+        function imgclick1(){
+              
+
+              a.setAttribute("src","./house1.jpg")
+              a.setAttribute("style","width:640px;height:400px;")
+      
+      
+          }
+        
+        function imgclick2(){
+              
+
+              a.setAttribute("src","./house5.jpg")
+              a.setAttribute("style","width:640px;height:400px;")
+      
+      
+          }
+        function imgclick3(){
+              
+
+              a.setAttribute("src","./house8.jpg")
+              a.setAttribute("style","width:640px;height:400px;")
+      
+      
+          }
+
+        var b=document.createElement("button")
+        var bDiv=document.createElement("div")
+        b.innerText=("Open Image1")
+        bDiv.appendChild(b);
+        document.body.appendChild(bDiv);
+        b.addEventListener("click",text);
+
+        function text(){
+            b.innerHTML="<img src=./img1.jpg  width=500px height=350px >"
+       
+        }
+        var c=document.createElement("button")
+        var cDiv=document.createElement("div")
+        c.innerText=("Open Image2")
+        cDiv.appendChild(c);
+        document.body.appendChild(cDiv);
+        c.addEventListener("click",text1);
+
+        function text1(){
+            c.innerHTML="<img src=./house1.jpg  width=500px height=350px >"
+        }
+
+        var d=document.createElement("button")
+        var dDiv=document.createElement("div")
+        d.innerText=("open Image3")
+        dDiv.appendChild(d);
+        document.body.appendChild(dDiv);
+        d.addEventListener("click",text2);
+
+        function text2(){
+            d.innerHTML="<img src=./house5.jpg  width=500px height=350px >"
+        }
+
+        var e=document.createElement("button")
+        var eDiv=document.createElement("div")
+        e.innerText=("open Image4")
+        eDiv.appendChild(e);
+        document.body.appendChild(eDiv);
+        e.addEventListener("click",text3);
+
+        function text3(){
+            e.innerHTML="<img src=./house8.jpg  width=500px height=350px >"
+        }
+
+
+
+        
+      
+      
+
+
+  
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
