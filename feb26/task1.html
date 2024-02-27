@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+      
+        var a=document.createElement("h1");
+        a.innerText="Please do register to proceed further";
+        document.body.appendChild(a);
+        a.setAttribute("style", "text-align:center; color:red;" )
+        var btn = document.createElement("button");
+        document.body.appendChild(btn);
+        btn.innerText = "Register";
+        btn.setAttribute("style", "margin-left:580px; margin-top:80px; color:green; background-color: blanchedalmond;")
+        btn.addEventListener("click", () => {
+            Username = prompt("Please enter the user name")
+            Password = prompt("Please enter the valid  password")
+            Dateofbirth = prompt("Enter your date of birth")
+            Email = prompt("Enter Email Id")
+            Mothername = prompt("Enter your mother name")
+
+
+            window.localStorage.setItem("Username", username)
+            window.localStorage.setItem("Password", password)
+            window.localStorage.setItem("Dateofbirth", DOB)
+            window.localStorage.setItem("Email", Email)
+            window.localStorage.setItem("Mothername", mothername)
+        })
+
+
+        var b = document.createElement("button");
+
+        b.innerText = "Check the registration details";
+        b.setAttribute("style", "margin-left:580px; margin-top:80px; color:green; background-color: blanchedalmond;")
+
+        document.body.appendChild(b);
+        b.style.marginLeft = "50px";
+        b.addEventListener("click", () => {
+            window.location.assign("./registerdetails.html");
+        })
+
+    </script>
+    
+</body>
+</html>

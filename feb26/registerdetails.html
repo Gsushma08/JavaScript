@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        border: 2px solid black;
+        width: 350px;
+
+
+    }
+    td{
+        border: 2px solid red;
+        width: 180px;
+        color: blue;
+    }
+</style>
+<body>
+    <script>
+       a=document.createElement("h1");
+        a.innerText="User Details";
+        document.body.appendChild(a);
+        var t=document.createElement("table");
+        document.body.appendChild(t);
+        
+        var tr1=document.createElement("tr");
+        td1=document.createElement("td");
+        td1.innerText="Username"
+        t.appendChild(tr1);
+        tr1.appendChild(td1);
+        td2=document.createElement("td")
+        td2.innerHTML=window.localStorage.getItem("Username");
+        tr1.appendChild(td2);
+        
+        tr2=document.createElement("tr");
+        td1=document.createElement("td"); 
+        td1.innerText="Password";
+        tr2.appendChild(td1);
+        td2=document.createElement("td");
+        tr2.appendChild(td2);
+        t.appendChild(tr2);
+        td2.innerHTML=window.localStorage.getItem("Password");
+        
+        
+        tr3=document.createElement("tr");
+        td1=document.createElement("td"); 
+        td1.innerText="Email";
+        tr3.appendChild(td1);
+        td2=document.createElement("td");
+        tr3.appendChild(td2);
+        t.appendChild(tr3);
+        td2.innerHTML=window.localStorage.getItem("Email");
+        
+        
+        tr4=document.createElement("tr");
+        td1=document.createElement("td"); 
+        td1.innerText="Dateofbirth";
+        tr4.appendChild(td1);
+        td2=document.createElement("td");
+        tr4.appendChild(td2);
+        t.appendChild(tr4);
+        td2.innerHTML=window.localStorage.getItem("Dateofbirth");
+
+        tr5=document.createElement("tr");
+        td1=document.createElement("td"); 
+        td1.innerText="Mothername";
+        tr5.appendChild(td1);
+        td2=document.createElement("td");
+        tr5.appendChild(td2);
+        t.appendChild(tr5);
+        td2.innerHTML=window.localStorage.getItem("Mothername");
+
+       
+        
+
+    </script>
+        
+        
+
+    
+</body>
+</html>
