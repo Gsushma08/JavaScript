@@ -18,18 +18,18 @@
         btn.innerText = "Register";
         btn.setAttribute("style", "margin-left:580px; margin-top:80px; color:green; background-color: blanchedalmond;")
         btn.addEventListener("click", () => {
-            Username = prompt("Please enter the user name")
-            Password = prompt("Please enter the valid  password")
-            Dateofbirth = prompt("Enter your date of birth")
-            Email = prompt("Enter Email Id")
-            Mothername = prompt("Enter your mother name")
+            var Username = prompt("Please enter the user name")
+            var Password = prompt("Please enter the valid  password")
+            var Dateofbirth = prompt("Enter your date of birth")
+            var Email = prompt("Enter Email Id")
+            var Mothername = prompt("Enter your mother name")
 
 
-            window.localStorage.setItem("Username", username)
-            window.localStorage.setItem("Password", password)
-            window.localStorage.setItem("Dateofbirth", DOB)
+            window.localStorage.setItem("Username", Username)
+            window.localStorage.setItem("Password", Password)
+            window.localStorage.setItem("Dateofbirth", Dateofbirth)
             window.localStorage.setItem("Email", Email)
-            window.localStorage.setItem("Mothername", mothername)
+            window.localStorage.setItem("Mothername", Mothername)
         })
 
 
