@@ -40,7 +40,7 @@ async function getAirQuality() {
         displayAirQuality(data, city); 
     } catch (error) {
         console.error('Error:', error.message);
-        alert('Failed to fetch air quality data. Please try again later.');
+        alert('Failed to fetch air quality data. Please enter valid city name.');
     }
 }
 
