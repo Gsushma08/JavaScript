@@ -9,7 +9,7 @@ async function getAirQuality() {
     
     // Validates the city name
     if (!isValidCity(city)) {
-        alert('City name should contain only alphabetic characters and spaces.');
+        alert('Please enter the city name.');
         return;
     }
 
