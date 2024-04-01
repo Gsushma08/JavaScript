@@ -7,9 +7,9 @@ const buttonClick = () => {
 buttonClick();
 
 async function getAirQuality() {
-    console.log("getAirQuality called"); // Debugging: Check if getAirQuality is called
+    console.log("getAirQuality called"); 
     const cityInput = document.getElementById('city-input');
-    console.log("cityInput:", cityInput); // Debugging: Check if cityInput is selected
+    console.log("cityInput:", cityInput); 
     const city = cityInput.value.trim();
     
     console.log("Raw city input:", city);
