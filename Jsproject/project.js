@@ -1,19 +1,24 @@
-document.addEventListener('DOMContentLoaded', () => {
+const buttonClick = () => {
     const button = document.getElementById('check-button');
+    console.log("Button:", button); 
     button.addEventListener('click', getAirQuality);
-});
+};
+
+buttonClick();
 
 async function getAirQuality() {
+    console.log("getAirQuality called"); // Debugging: Check if getAirQuality is called
     const cityInput = document.getElementById('city-input');
+    console.log("cityInput:", cityInput); // Debugging: Check if cityInput is selected
     const city = cityInput.value.trim();
     
+    console.log("Raw city input:", city);
+
     // Validates the city name
     if (!isValidCity(city)) {
-        alert('Please enter the city name.');
+        alert('City name should contain only alphabetic characters and spaces.');
         return;
     }
-
-    console.log("Raw city input:", city);
 
     const apiUrl = `https://air-quality-by-api-ninjas.p.rapidapi.com/v1/airquality?city=${city}`;
     console.log("API URL:", apiUrl);
@@ -40,7 +45,7 @@ async function getAirQuality() {
         displayAirQuality(data, city); 
     } catch (error) {
         console.error('Error:', error.message);
-        alert('Failed to fetch air quality data. Please enter valid city name.');
+        alert('Failed to fetch air quality data. Please try again later.');
     }
 }
 
