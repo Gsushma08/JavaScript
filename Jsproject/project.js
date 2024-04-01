@@ -16,7 +16,7 @@ async function getAirQuality() {
 
     // Validates the city name
     if (!isValidCity(city)) {
-        alert('City name should contain only alphabetic characters and spaces.');
+        alert('Please enter the city name');
         return;
     }
 
@@ -45,7 +45,7 @@ async function getAirQuality() {
         displayAirQuality(data, city); 
     } catch (error) {
         console.error('Error:', error.message);
-        alert('Failed to fetch air quality data. Please try again later.');
+        alert('Failed to fetch air quality data. Please enter valid city name.');
     }
 }
 
