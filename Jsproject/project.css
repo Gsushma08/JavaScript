@@ -1,60 +1,50 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i0.wp.com/metro.co.uk/wp-content/uploads/2015/09/world-pollution-map-3.jpg?quality=90&strip=all&zoom=1&resize=644%2C457&ssl=1'); /* Replace 'background-image.jpg' with your actual image file */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    
+    
 }
 
 .container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 2px;
+    background-color:rgb(216, 243, 243);
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    color: #ff7300;
 }
 
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-input[type="text"] {
+input[type="text"],
+button {
     width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    padding: 12px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 1px solid black;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
+    background-color: whitesmoke;
+    color: #0e0d0d;
+    border: 1px solid black;
     cursor: pointer;
 }
 
-#result {
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+button:hover {
+    background-color: #c1d7ee;
 }
-
 .severe {
     color: red;
 }
@@ -69,17 +59,10 @@ button {
 
 #health-recommendations {
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 2px;
 }
 
-.color-coded-scale {
-    margin-bottom: 20px;
-}
 
-.scale-item {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
+
 
 
