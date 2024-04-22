@@ -16,7 +16,7 @@ async function getAirQuality() {
 
     // Validates the city name
     if (!isValidCity(city)) {
-        alert('Please enter the city name');
+        alert('Please enter the city name.');
         return;
     }
 
@@ -49,6 +49,8 @@ async function getAirQuality() {
     }
 }
 
+
+
 function isValidCity(city) {
     // Check if the city name contains only alphabetic characters and spaces
     return /^[a-zA-Z\s]+$/.test(city);
@@ -57,7 +59,7 @@ function isValidCity(city) {
 function colorForAQI(aqi) {
     if (aqi <= 50) {
         return 'good';
-    } else if (aqi <= 100) {
+    } else if (aqi <= 150) {
         return 'moderate';
     } else  {
         return 'severe';
@@ -66,6 +68,7 @@ function colorForAQI(aqi) {
 
 function displayAirQuality(data, cityName) {
     const resultDiv = document.getElementById('result');
+
     const overallAQI = data.overall_aqi;
 
     resultDiv.innerHTML = `
